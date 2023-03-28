@@ -16,6 +16,7 @@ public class InputReader : MonoBehaviour
 
     private void FixedUpdate()
     {
+        _playerEntity.isMoving = false;
         // slowdown diagonally speed
         if (Mathf.Abs(_horizontalDirection) > 0.5f && Mathf.Abs(_verticalDirection) > 0.5)
         {
@@ -26,7 +27,10 @@ public class InputReader : MonoBehaviour
             _playerEntity.DiagonalMoveResolver(false);
         }
 
-        _playerEntity.MoveHorizontally(_horizontalDirection);
         _playerEntity.MoveVertically(_verticalDirection);
+        _playerEntity.MoveHorizontally(_horizontalDirection);
+        
+
+        
     }
 }
