@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Player.Interfaces;
+using InputReader.Interfaces;
 using UnityEngine;
+using Core.Services.Updater;
 
 namespace Player
 {
-    internal class PlayerBrain
+    public class PlayerBrain : IDisposable
     {
         private readonly PlayerEntity _playerEntity;
         private readonly List<IEntityInputSource> _inputSources;
@@ -16,37 +17,32 @@ namespace Player
         {
             _playerEntity = playerEntity;
             _inputSources = inputSources;
+            ProjectUpdater.Instance.FixedUpdateCalled += OnFixedUpdate;
+
         }
 
-        public void OnFixedUpdate()
+        public void Dispose() => ProjectUpdater.Instance.FixedUpdateCalled -= OnFixedUpdate;
+
+        private void OnFixedUpdate()
         {
             var horizontalDirection = GetHorizontalDirection();
             var verticalDirection = GetVerticalDirection();
 
-            if (horizontalDirection > verticalDirection)
-                _playerEntity.FaceHorizontally(horizontalDirection);
-            else
-                _playerEntity.FaceVertically(verticalDirection);
+            // idle
+            _playerEntity.StayFace();
 
-
-            // diag move
+            // diag move resolv
             if (Mathf.Abs(horizontalDirection) > 0.5f && Mathf.Abs(verticalDirection) > 0.5f)
                 _playerEntity.DiagonalMoveResolver(true);
             else
                 _playerEntity.DiagonalMoveResolver(false);
 
 
-
+            // move
             if (horizontalDirection >= 0.5f || horizontalDirection <= -0.5f)
                 _playerEntity.MoveHorizontally(horizontalDirection);
             if (verticalDirection >= 0.5f || verticalDirection <= -0.5f)
                 _playerEntity.MoveVertically(verticalDirection);
-
-
-
-
-
-
 
         }
 
@@ -74,6 +70,5 @@ namespace Player
             return 0;
         }
 
-        // private bool isAttack => _inputSources.Any(source => source.Attack);
     }
 }
