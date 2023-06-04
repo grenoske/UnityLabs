@@ -19,6 +19,7 @@ namespace Player
             _inputSources = inputSources;
             ProjectUpdater.Instance.FixedUpdateCalled += OnFixedUpdate;
 
+
         }
 
         public void Dispose() => ProjectUpdater.Instance.FixedUpdateCalled -= OnFixedUpdate;
