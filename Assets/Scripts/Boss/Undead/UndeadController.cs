@@ -16,8 +16,8 @@ public class UndeadController : MonoBehaviour
     NavMeshAgent navMeshAgent;
     public float detectionRange = 10f;
 
-    public float MinDistanceToPlayer = 2f; // ?????????? ????????? ?? ??????
-    private Vector2 initialPosition;  // ????????? ??????? ????
+    public float MinDistanceToPlayer = 2f; 
+    private Vector2 initialPosition;  
 
     private void Start()
     {
@@ -26,8 +26,10 @@ public class UndeadController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         navMeshAgent = GetComponent<NavMeshAgent>();
+        navMeshAgent.updateRotation = false;
+        navMeshAgent.updateUpAxis = false;
 
-        // ???????? ????????? ???????
+
         initialPosition = transform.position;
     }
 
@@ -41,7 +43,7 @@ public class UndeadController : MonoBehaviour
                 RotateTowardsPlayer();
                 if (distanceToPlayer > MinDistanceToPlayer)
                 {
-                    MoveTowardsPlayer();
+                    navMeshAgent.SetDestination(player.position);
                 }
             }
             else if (!isAtInitialPosition())
@@ -71,7 +73,7 @@ public class UndeadController : MonoBehaviour
     private bool isAtInitialPosition()
     {
         float distanceToInitialPosition = Vector2.Distance(transform.position, initialPosition);
-        return distanceToInitialPosition <= 1f; // ???????????, ?? ???????? ?? ?????????? ??????? ????? ??? ???????? 0.1
+        return distanceToInitialPosition <= 1f; 
     }
 
     private void MoveTowardsPlayer()
@@ -82,8 +84,7 @@ public class UndeadController : MonoBehaviour
 
     private void ReturnToInitialPosition()
     {
-        Vector2 direction = initialPosition - (Vector2)transform.position;
-        rb.velocity = direction.normalized * movementSpeed;
+        navMeshAgent.SetDestination(initialPosition);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -96,7 +97,7 @@ public class UndeadController : MonoBehaviour
 
     private void Attack()
     {
-        rb.velocity = Vector2.zero;
+        navMeshAgent.isStopped = true;
         isAttacking = true;
         _animator.SetBool("isAttacking", isAttacking);
 
@@ -120,7 +121,6 @@ public class UndeadController : MonoBehaviour
 
     private void Die()
     {
-        // ??????????? ????? ??????????? ?? ?????????? ??????? ????? ?????? ????
         transform.position = initialPosition;
     }
 }
