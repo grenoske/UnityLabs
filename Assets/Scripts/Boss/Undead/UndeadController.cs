@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -12,12 +13,12 @@ public class UndeadController : MonoBehaviour
     private Transform player;
     private Rigidbody2D rb;
     private Animator _animator;
-    NavMeshAgent navMeshAgent;
+    private NavMeshAgent navMeshAgent;
     public float detectionRange = 10f;
+    public float attackRange = 2f;
     private bool isMoving = false;
-
-    public float MinDistanceToPlayer = 2f; 
-    private Vector2 initialPosition;  
+    private Vector2 initialPosition;
+    public Sprite deadSprite;
 
     private void Start()
     {
@@ -28,44 +29,51 @@ public class UndeadController : MonoBehaviour
         navMeshAgent.updateRotation = false;
         navMeshAgent.updateUpAxis = false;
 
-
         initialPosition = transform.position;
     }
 
     private void Update()
     {
-        if (!isAttacking)
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+        if(gameObject.tag == "Dead")
         {
-            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-            if (distanceToPlayer <= detectionRange)
-            {
-                RotateTowardsPlayer();
+            Die();
+        }
+        else if (distanceToPlayer <= detectionRange)
+        {
+            RotateTowardsPlayer();
 
-                if (movingAnimation)
-                {
-                    isMoving = true;
-                    _animator.SetBool("isMoving", isMoving);
-                }
-
-                if (distanceToPlayer > MinDistanceToPlayer)
-                {
-                    navMeshAgent.SetDestination(player.position);
-                }
-            }
-            else if (!isAtInitialPosition())
+            if (movingAnimation)
             {
-                if (movingAnimation)
-                {
-                    isMoving = true;
-                    _animator.SetBool("isMoving", isMoving);
-                }
-                ReturnToInitialPosition();
-            }
-            else if (isMoving == true)
-            {
-                isMoving = false;
+                isMoving = true;
                 _animator.SetBool("isMoving", isMoving);
             }
+
+            if (distanceToPlayer > attackRange)
+            {
+                navMeshAgent.SetDestination(player.position);
+            }
+            else
+            {
+                if (!isAttacking)
+                {
+                    Attack();
+                }
+            }
+        }
+        else if (!isAtInitialPosition())
+        {
+            if (movingAnimation)
+            {
+                isMoving = true;
+                _animator.SetBool("isMoving", isMoving);
+            }
+            ReturnToInitialPosition();
+        }
+        else if (isMoving == true)
+        {
+            isMoving = false;
+            _animator.SetBool("isMoving", isMoving);
         }
     }
 
@@ -89,13 +97,7 @@ public class UndeadController : MonoBehaviour
     private bool isAtInitialPosition()
     {
         float distanceToInitialPosition = Vector2.Distance(transform.position, initialPosition);
-        return distanceToInitialPosition <= 1f; 
-    }
-
-    private void MoveTowardsPlayer()
-    {
-        Vector2 direction = player.position - transform.position;
-        rb.velocity = direction.normalized * movementSpeed;
+        return distanceToInitialPosition <= 1f;
     }
 
     private void ReturnToInitialPosition()
@@ -132,12 +134,36 @@ public class UndeadController : MonoBehaviour
         _animator.SetBool("isAttacking", isAttacking);
     }
 
-
     private void Die()
     {
-        transform.position = initialPosition;
+        _animator.SetBool("isAttacking", false);
+        _animator.SetBool("isMoving", false);
+        _animator.SetBool("isDying", true);
+
+        // ?????? ??????? ?? deadSprite ????? ?????????? ???????? ??????
+        StartCoroutine(ChangeSpriteAfterDeathAnimation());
+
+        // ????????? ??? ????????? ???????????
+        navMeshAgent.isStopped = true;
+        rb.simulated = false;
+        // ????????? ??????????
+        Collider2D collider = GetComponent<Collider2D>();
+        if (collider != null)
+        {
+            collider.enabled = false;
+        }
+    }
+
+    private IEnumerator ChangeSpriteAfterDeathAnimation()
+    {
+        yield return new WaitForSeconds(_animator.GetCurrentAnimatorStateInfo(0).length); // ?????????? ?????????? ????????
+
+        // ?????? ??????? ?? deadSprite
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.sprite = deadSprite;
     }
 }
+
 
 
 

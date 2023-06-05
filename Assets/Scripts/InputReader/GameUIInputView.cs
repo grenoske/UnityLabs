@@ -13,8 +13,8 @@ namespace InputReader
     {
         [SerializeField] private Joystick _joystick;
         [SerializeField] private Button _attackButton;
-        public float HorizontalDirection => _joystick.Horizontal;
-        public float VerticalDirection => _joystick.Vertical;
+        public float HorizontalDirection => RoundJoystickValue(_joystick.Horizontal);
+        public float VerticalDirection => RoundJoystickValue(_joystick.Vertical);
 
         public bool Attack { get; private set; }
 
@@ -27,10 +27,22 @@ namespace InputReader
         {
             _attackButton.onClick.RemoveAllListeners();
         }
+
         public void ResetOneTimeAction()
         {
             Attack = false;
         }
 
+        private float RoundJoystickValue(float value)
+        {
+            const float threshold = 0.5f;
+            if (value > threshold)
+                return 1f;
+            else if (value < -threshold)
+                return -1f;
+            else
+                return 0f;
+        }
     }
 }
+

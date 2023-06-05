@@ -6,6 +6,7 @@ public class EnemyHealthManager : MonoBehaviour
 {
     public int MaxHealth;
     public int CurrentHealth;
+    public string deadTag = "Dead";
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class EnemyHealthManager : MonoBehaviour
     {
         if (CurrentHealth <= 0)
         {
-            Destroy(gameObject);
+            gameObject.tag = deadTag;
         }
 
     }
