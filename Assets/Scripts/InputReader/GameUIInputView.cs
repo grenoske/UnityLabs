@@ -12,8 +12,25 @@ namespace InputReader
     public class GameUIInputView : MonoBehaviour, IEntityInputSource
     {
         [SerializeField] private Joystick _joystick;
+        [SerializeField] private Button _attackButton;
         public float HorizontalDirection => _joystick.Horizontal;
         public float VerticalDirection => _joystick.Vertical;
+
+        public bool Attack { get; private set; }
+
+        private void Awake()
+        {
+            _attackButton.onClick.AddListener(() => Attack = true);
+        }
+
+        private void OnDestroy()
+        {
+            _attackButton.onClick.RemoveAllListeners();
+        }
+        public void ResetOneTimeAction()
+        {
+            Attack = false;
+        }
 
     }
 }
