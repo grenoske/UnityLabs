@@ -1,4 +1,5 @@
 ﻿using Cinemachine;
+using Core.Services.Updater;
 using InputReader;
 using Player;
 using UnityEngine;
@@ -9,6 +10,7 @@ namespace Core.Services
     public class LocationTrigger : MonoBehaviour
     {
         public string newAreaName;
+        public string oldAreaName;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
@@ -22,6 +24,7 @@ namespace Core.Services
         private void LoadNewArea(string areaName)
         {
             // Завантаження нової сцени
+            ProjectUpdater.LocationStartPoint = oldAreaName;
             SceneManager.LoadScene(areaName);
         }
     }

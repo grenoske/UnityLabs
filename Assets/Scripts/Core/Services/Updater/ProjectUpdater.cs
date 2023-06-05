@@ -12,6 +12,8 @@ namespace Core.Services.Updater
         public event Action FixedUpdateCalled;
         public event Action LateUpdateCalled;
 
+        public static string LocationStartPoint; //need to refact
+
         private bool _isPaused;
 
         public bool IsPaused

@@ -8,6 +8,7 @@ using InputReader;
 using Player;
 using InputReader.Interfaces;
 using Core.Services.Updater;
+using Assets.Scripts.Core.Services;
 
 namespace Core
 {
@@ -15,6 +16,7 @@ namespace Core
     {
         [SerializeField] private PlayerEntity _playerEntity;
         [SerializeField] private GameUIInputView _gameUIInputView;
+        [SerializeField] private LocationStartPoint _locationPoint;
 
         private ExternalDevicesInputReader _externalDeviceInput;
         private PlayerSystem _playerSystem;
@@ -30,6 +32,8 @@ namespace Core
             else
                 _projectUpdater = ProjectUpdater.Instance as ProjectUpdater;
             _externalDeviceInput = new ExternalDevicesInputReader();
+            if (_locationPoint != null && ProjectUpdater.LocationStartPoint != null)
+                _locationPoint.SetPlayerPos(ProjectUpdater.LocationStartPoint);
             _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
             {
                 _gameUIInputView,
