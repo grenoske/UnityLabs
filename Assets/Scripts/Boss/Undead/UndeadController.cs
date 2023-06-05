@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class UndeadController : MonoBehaviour
 {
+    public bool movingAnimation = false;
     public float movementSpeed = 5f;
     public float rotationSpeed = 5f;
     public float attackDelay = 2f;
@@ -13,6 +14,7 @@ public class UndeadController : MonoBehaviour
     private Animator _animator;
     NavMeshAgent navMeshAgent;
     public float detectionRange = 10f;
+    private bool isMoving = false;
 
     public float MinDistanceToPlayer = 2f; 
     private Vector2 initialPosition;  
@@ -38,6 +40,13 @@ public class UndeadController : MonoBehaviour
             if (distanceToPlayer <= detectionRange)
             {
                 RotateTowardsPlayer();
+
+                if (movingAnimation)
+                {
+                    isMoving = true;
+                    _animator.SetBool("isMoving", isMoving);
+                }
+
                 if (distanceToPlayer > MinDistanceToPlayer)
                 {
                     navMeshAgent.SetDestination(player.position);
@@ -45,7 +54,17 @@ public class UndeadController : MonoBehaviour
             }
             else if (!isAtInitialPosition())
             {
+                if (movingAnimation)
+                {
+                    isMoving = true;
+                    _animator.SetBool("isMoving", isMoving);
+                }
                 ReturnToInitialPosition();
+            }
+            else if (isMoving == true)
+            {
+                isMoving = false;
+                _animator.SetBool("isMoving", isMoving);
             }
         }
     }
@@ -96,6 +115,11 @@ public class UndeadController : MonoBehaviour
     {
         navMeshAgent.isStopped = true;
         isAttacking = true;
+        if (movingAnimation)
+        {
+            isMoving = false;
+            _animator.SetBool("isMoving", isMoving);
+        }
         _animator.SetBool("isAttacking", isAttacking);
 
         Invoke(nameof(ResetAttack), attackDelay);
