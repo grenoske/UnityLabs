@@ -3,8 +3,6 @@ using UnityEngine.AI;
 
 public class UndeadController : MonoBehaviour
 {
-    public int maxHealth = 100;
-    private int currentHealth;
     public float movementSpeed = 5f;
     public float rotationSpeed = 5f;
     public float attackDelay = 2f;
@@ -21,7 +19,6 @@ public class UndeadController : MonoBehaviour
 
     private void Start()
     {
-        currentHealth = maxHealth;
         player = GameObject.Find("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
@@ -106,18 +103,11 @@ public class UndeadController : MonoBehaviour
 
     private void ResetAttack()
     {
+        navMeshAgent.isStopped = false;
         isAttacking = false;
         _animator.SetBool("isAttacking", isAttacking);
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
 
     private void Die()
     {
