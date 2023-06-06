@@ -23,7 +23,6 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        Debug.Log("Restart!");
         GameLevelInitializer.onRestart = true;
     }
 }

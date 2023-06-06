@@ -35,7 +35,17 @@ namespace Core
                 _projectUpdater = ProjectUpdater.Instance as ProjectUpdater;
             _externalDeviceInput = new ExternalDevicesInputReader();
             if (_locationPoint != null && ProjectUpdater.LocationStartPoint != null)
+            {
                 _locationPoint.SetPlayerPos(ProjectUpdater.LocationStartPoint);
+            }
+            if (ProjectUpdater.DeadBosses != null)
+            {
+                int BossIndex = SceneManager.GetActiveScene().buildIndex;
+                if (ProjectUpdater.DeadBosses.Contains(BossIndex.ToString()))
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+                }
+            }
             _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
             {
                 _gameUIInputView,
@@ -56,6 +66,8 @@ namespace Core
             if (onRestart == true)
             {
                 _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
+                ProjectUpdater.DeadBosses = null;
+                ProjectUpdater.LocationStartPoint = null;
                 SceneManager.LoadScene(0);
                 onRestart = false;
             }

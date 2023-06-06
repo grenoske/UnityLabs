@@ -557,6 +557,155 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: attacking_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17, y: 35}
+        - {x: 1, y: 41}
+        - {x: -17, y: 41}
+        - {x: -35, y: 28}
+        - {x: -37, y: 15}
+        - {x: -19, y: 32}
+        - {x: 14, y: 27}
+        - {x: 16, y: 0}
+        - {x: -10, y: -23}
+        - {x: 4, y: -21}
+        - {x: 21, y: -11}
+        - {x: 28, y: 1}
+        - {x: 28, y: 13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a84550eee7b24d95f35e7f98c4e17
+      internalID: -656142612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 34
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: -15.5}
+        - {x: -19, y: -20.5}
+        - {x: -1, y: -18.5}
+        - {x: 13, y: -8.5}
+        - {x: 15, y: 2.5}
+        - {x: 9, y: 18.5}
+        - {x: 4, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298f0a201ff6c39429f945b4d1208c11
+      internalID: -1536310796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 3}
+        - {x: 22, y: -7}
+        - {x: 6, y: -11}
+        - {x: -14, y: -11}
+        - {x: -33, y: -3}
+        - {x: -32, y: -9}
+        - {x: -10, y: -20}
+        - {x: 17, y: -19}
+        - {x: 39, y: -7}
+        - {x: 41, y: 2}
+        - {x: 39, y: 15}
+        - {x: 32, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17eb6c8a9a0f9a4dbaea66e36b70824
+      internalID: -108607618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: 31}
+        - {x: -13, y: 3}
+        - {x: -29, y: -13}
+        - {x: -14, y: -8}
+        - {x: -6, y: -2}
+        - {x: -3, y: 12}
+        - {x: -7, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9d110480df86844ac51927e3b1fc2f
+      internalID: -742163261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 34
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6.5, y: 0}
+        - {x: -0.5, y: -7}
+        - {x: -13.5, y: -15}
+        - {x: 9.5, y: -12}
+        - {x: 14.5, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548ffece5b800b441a20f45a065569fc
+      internalID: 1126954785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -573,6 +722,11 @@ TextureImporter:
       attacking_10: -1121399865
       attacking_11: -230014424
       attacking_12: -1985497992
+      attacking_13: -656142612
+      attacking_14: -1536310796
+      attacking_15: -108607618
+      attacking_16: -742163261
+      attacking_17: 1126954785
       attacking_2: 1847086558
       attacking_3: 1431179818
       attacking_4: 11548103

@@ -18,6 +18,7 @@ public class UndeadController : MonoBehaviour, IDisposable
     private NavMeshAgent navMeshAgent;
     public float detectionRange = 10f;
     public float attackRange = 2f;
+    public float attackDuration = 1f;
     private bool isMoving = false;
     private Vector2 initialPosition;
     public Sprite deadSprite;
@@ -46,7 +47,7 @@ public class UndeadController : MonoBehaviour, IDisposable
         {
             RotateTowardsPlayer();
 
-            if (movingAnimation)
+            if (movingAnimation && !isAttacking)
             {
                 isMoving = true;
                 _animator.SetBool("isMoving", isMoving);
@@ -112,35 +113,50 @@ public class UndeadController : MonoBehaviour, IDisposable
     {
         if (collision.collider.CompareTag("Player"))
         {
-            Attack();
+/*            Rigidbody2D playerRigidbody = collision.gameObject.GetComponent<Rigidbody2D>();
+
+            if (playerRigidbody != null)
+            {
+                Vector2 pushDirection = collision.contacts[0].normal; // ???????? ?????????????
+                float pushForce = 10f; // ???? ?????????????
+
+                Debug.Log("Push");
+                playerRigidbody.AddForce(pushDirection * pushForce, ForceMode2D.Impulse);
+            }*/
         }
     }
 
     private void Attack()
     {
         navMeshAgent.isStopped = true;
-        isAttacking = true;
         if (movingAnimation)
         {
             isMoving = false;
             _animator.SetBool("isMoving", isMoving);
         }
+        isAttacking = true;
         _animator.SetBool("isAttacking", isAttacking);
-
-        Invoke(nameof(ResetAttack), attackDelay);
+        Invoke(nameof(DelayAttack), attackDuration);
     }
 
+    private void DelayAttack()
+    {
+        float attackDuration = _animator.GetCurrentAnimatorStateInfo(0).length;
+        Debug.Log("2: "+attackDuration);
+        _animator.SetBool("isAttacking", false);
+        Invoke(nameof(ResetAttack), attackDelay);
+    }
     private void ResetAttack()
     {
-        navMeshAgent.isStopped = false;
         isAttacking = false;
-        _animator.SetBool("isAttacking", isAttacking);
+        navMeshAgent.isStopped = false;
     }
 
     private void Die()
     {
         _animator.SetBool("isAttacking", false);
-        _animator.SetBool("isMoving", false);
+        if (movingAnimation == true)
+            _animator.SetBool("isMoving", false);
         _animator.SetBool("isDying", true);
 
         // ?????? ??????? ?? deadSprite ????? ?????????? ???????? ??????

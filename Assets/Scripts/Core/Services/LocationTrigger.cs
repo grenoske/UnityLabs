@@ -25,6 +25,12 @@ namespace Core.Services
         {
             // Завантаження нової сцени
             ProjectUpdater.LocationStartPoint = oldAreaName;
+            if (GameObject.FindGameObjectWithTag("Dead") != null)
+            {
+                int BossIndex = SceneManager.GetActiveScene().buildIndex;
+                if (ProjectUpdater.DeadBosses == null || !ProjectUpdater.DeadBosses.Contains(BossIndex.ToString()))
+                    ProjectUpdater.DeadBosses += BossIndex;
+            }
             SceneManager.LoadScene(areaName);
         }
     }
