@@ -453,40 +453,25 @@ TextureImporter:
       name: Attacks2Knight_14
       rect:
         serializedVersion: 2
-        x: 308
-        y: 192
-        width: 55
-        height: 43
+        x: 350
+        y: 127
+        width: 35
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 6.5, y: 11}
+        - {x: -3.5, y: 17}
+        - {x: 2.5, y: 3}
+        - {x: -17.5, y: -13}
+        - {x: -14.5, y: -13}
+        - {x: 2.5, y: -3}
       tessellationDetail: 0
       bones: []
       spriteID: 49f0d039918c48b438252294a633e56f
       internalID: -64478248
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_15
-      rect:
-        serializedVersion: 2
-        x: 438
-        y: 130
-        width: 74
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfc0c344c637e244591bcd379dcd3ec6
-      internalID: -1058852760
       vertices: []
       indices: 
       edges: []
@@ -497,10 +482,10 @@ TextureImporter:
         serializedVersion: 2
         x: 566
         y: 192
-        width: 53
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 55
+        height: 50
+      alignment: 9
+      pivot: {x: 0.1584839, y: 0.45492005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -518,10 +503,10 @@ TextureImporter:
         serializedVersion: 2
         x: 694
         y: 192
-        width: 53
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 55
+        height: 50
+      alignment: 9
+      pivot: {x: 0.1516535, y: 0.45492005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -539,10 +524,10 @@ TextureImporter:
         serializedVersion: 2
         x: 817
         y: 192
-        width: 30
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 55
+        height: 50
+      alignment: 9
+      pivot: {x: 0.28826016, y: 0.45492005}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -560,10 +545,10 @@ TextureImporter:
         serializedVersion: 2
         x: 950
         y: 192
-        width: 29
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 55
+        height: 50
+      alignment: 9
+      pivot: {x: 0.20409934, y: 0.46948546}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -581,10 +566,10 @@ TextureImporter:
         serializedVersion: 2
         x: 47
         y: 128
-        width: 56
+        width: 74
         height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.21175756, y: 0.45615247}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -592,27 +577,6 @@ TextureImporter:
       bones: []
       spriteID: d446e15b4c52f4740918f61eaa1c5efa
       internalID: -108259793
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_21
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 128
-        width: 35
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0f51148ad6881543a768d662921807b
-      internalID: -1057257412
       vertices: []
       indices: 
       edges: []
@@ -643,14 +607,31 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 216
-        y: 128
-        width: 25
-        height: 43
+        y: 127
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 1, y: -18}
+        - {x: -5, y: -18}
+        - {x: -9, y: -22}
+        - {x: 15, y: -21}
+        - {x: 14, y: -18}
+        - {x: 7, y: -14}
+      - - {x: -6, y: 19}
+        - {x: -18, y: 22}
+        - {x: -14, y: 19}
+        - {x: -7, y: 13}
+        - {x: -2, y: 3}
+        - {x: -5, y: -7}
+        - {x: -20, y: -20}
+        - {x: -15, y: -20}
+        - {x: -1, y: -11}
+        - {x: 6, y: -2}
+        - {x: 1, y: 12}
       tessellationDetail: 0
       bones: []
       spriteID: abbd453ac8724004db60b0049e342823
@@ -681,36 +662,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attacks2Knight_25
-      rect:
-        serializedVersion: 2
-        x: 350
-        y: 138
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1f52293bcffc0c84a88981f0607fe0dc
-      internalID: -1353245667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attacks2Knight_26
       rect:
         serializedVersion: 2
         x: 431
         y: 128
-        width: 30
+        width: 83
         height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.20583518, y: 0.4825603}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -723,610 +683,33 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Attacks2Knight_27
-      rect:
-        serializedVersion: 2
-        x: 564
-        y: 128
-        width: 27
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 82c0384a13f3bce48aee5c9acf8b91d1
-      internalID: 858443797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_28
-      rect:
-        serializedVersion: 2
-        x: 691
-        y: 128
-        width: 33
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bbf0a194fb05024d850b093639629d8
-      internalID: 1707584042
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_29
-      rect:
-        serializedVersion: 2
-        x: 817
-        y: 128
-        width: 37
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7b11fab9f264216448a780cdc71971b9
-      internalID: 969859244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_30
-      rect:
-        serializedVersion: 2
-        x: 927
-        y: 128
-        width: 43
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eceae60259f4c34a9b38c7a531687ae
-      internalID: 1058498911
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_31
-      rect:
-        serializedVersion: 2
-        x: 106
-        y: 131
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 14b3d0e2499f8ba43a32642cde3c7b5c
-      internalID: -1595820157
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_32
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 127
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c4d3a82314cd574aa25ab8a68a1c069
-      internalID: -2112698298
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_33
-      rect:
-        serializedVersion: 2
-        x: 366
-        y: 128
-        width: 18
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02517985971b1fd49a899794d95d2a71
-      internalID: -273735007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_34
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 0
-        width: 53
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7ae67c594e18a82448e439416d9956bd
-      internalID: -199593731
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Attacks2Knight_35
       rect:
         serializedVersion: 2
         x: 35
-        y: 64
-        width: 45
-        height: 47
+        y: 62
+        width: 79
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16.5, y: 22}
+        - {x: -2.5, y: 16}
+        - {x: 5.5, y: 1}
+        - {x: -4.5, y: -13}
+        - {x: -38.5, y: -21}
+        - {x: -37.5, y: -22}
+        - {x: 34.5, y: -22}
+        - {x: 22.5, y: -18}
+        - {x: 14.5, y: -5}
+        - {x: 13.5, y: 6}
+        - {x: -0.5, y: 21}
       tessellationDetail: 0
       bones: []
       spriteID: 025a5ea5008c6c24fb97a87ac767bad7
       internalID: 1061960687
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_36
-      rect:
-        serializedVersion: 2
-        x: 149
-        y: 0
-        width: 53
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2430a5d23d62c5f41b99a3c2623123b5
-      internalID: -1492938030
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_37
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 64
-        width: 32
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4680b78546bfd6749817131569f43f8e
-      internalID: -309283853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_38
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 0
-        width: 30
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 35b6639ecb98cbd41bc9f07d95cf6d5d
-      internalID: 1111003647
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_39
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 64
-        width: 30
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b392ed23367656e4bb61667005453004
-      internalID: 396613947
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_40
-      rect:
-        serializedVersion: 2
-        x: 415
-        y: 64
-        width: 51
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6888e26a5cf2203458e8c2569c365659
-      internalID: 583635659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_41
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 0
-        width: 29
-        height: 46
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e05c1437a84e784693af21b22753e51
-      internalID: 2082162266
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_42
-      rect:
-        serializedVersion: 2
-        x: 518
-        y: 0
-        width: 35
-        height: 13
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3a9e7bd27983fda41a68c42297e4ae7c
-      internalID: 1038693124
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_43
-      rect:
-        serializedVersion: 2
-        x: 530
-        y: 3
-        width: 4
-        height: 7
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e52f65368bdc59046b03e51664de9ed4
-      internalID: -356994346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_44
-      rect:
-        serializedVersion: 2
-        x: 537
-        y: 0
-        width: 56
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cd869bbb20b58e4d82d4f26dde1fbdb
-      internalID: 1205623102
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_45
-      rect:
-        serializedVersion: 2
-        x: 543
-        y: 64
-        width: 52
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d7bde0f671f389945b6e717055d31dec
-      internalID: 1591422770
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_46
-      rect:
-        serializedVersion: 2
-        x: 643
-        y: 0
-        width: 13
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bd3414820307b5478731272c941d001
-      internalID: 628545343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_47
-      rect:
-        serializedVersion: 2
-        x: 655
-        y: 0
-        width: 25
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2da0e333de292b84bb2319fd5c5918b8
-      internalID: -760498971
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_48
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 64
-        width: 38
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48ba665161a45bd49bcac4a2c52652dc
-      internalID: 504622459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_49
-      rect:
-        serializedVersion: 2
-        x: 691
-        y: 0
-        width: 30
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 878ba10968070244f97bf1656f51594e
-      internalID: -406753101
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_50
-      rect:
-        serializedVersion: 2
-        x: 768
-        y: 0
-        width: 18
-        height: 8
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6e6fa157ac3437f439c0ac7f4dbbd3cb
-      internalID: 1246035599
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_51
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 10
-        width: 22
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3671654152db704a93e0968c9347153
-      internalID: -1747833152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_52
-      rect:
-        serializedVersion: 2
-        x: 789
-        y: 64
-        width: 55
-        height: 43
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d98bc38c3adcff842baafa98a96cd944
-      internalID: -941474630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_53
-      rect:
-        serializedVersion: 2
-        x: 819
-        y: 0
-        width: 30
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a1f3b2f38c024a4f9e864283deff71e
-      internalID: 38951560
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_54
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 2
-        width: 74
-        height: 105
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a5f63d31d16efe14bac83a8e88664484
-      internalID: -315232064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Attacks2Knight_55
-      rect:
-        serializedVersion: 2
-        x: 947
-        y: 0
-        width: 30
-        height: 42
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d5bee5be3de0ec848994c5511ba43d08
-      internalID: 57481603
       vertices: []
       indices: 
       edges: []

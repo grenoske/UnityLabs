@@ -33871,6 +33871,7 @@ MonoBehaviour:
   attackDelay: 0.7
   detectionRange: 10
   attackRange: 4
+  attackDuration: 1.06
   deadSprite: {fileID: -387941088660758834, guid: 81658989cc15d684b8c10f43a130c34d, type: 3}
 --- !u!114 &912347202
 MonoBehaviour:
