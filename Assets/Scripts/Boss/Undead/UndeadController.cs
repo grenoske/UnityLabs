@@ -1,8 +1,10 @@
+using Core.Services.Updater;
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class UndeadController : MonoBehaviour
+public class UndeadController : MonoBehaviour, IDisposable
 {
     public bool movingAnimation = false;
     public float movementSpeed = 5f;
@@ -22,6 +24,7 @@ public class UndeadController : MonoBehaviour
 
     private void Start()
     {
+        ProjectUpdater.Instance.UpdateCalled += OnUpdate;
         player = GameObject.Find("Player").transform;
         rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
@@ -32,7 +35,7 @@ public class UndeadController : MonoBehaviour
         initialPosition = transform.position;
     }
 
-    private void Update()
+    private void OnUpdate()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         if(gameObject.tag == "Dead")
@@ -161,6 +164,12 @@ public class UndeadController : MonoBehaviour
         // ?????? ??????? ?? deadSprite
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.sprite = deadSprite;
+    }
+
+    public void Dispose() => ProjectUpdater.Instance.UpdateCalled -= OnUpdate;
+    private void OnDestroy()
+    {
+        Dispose();
     }
 }
 

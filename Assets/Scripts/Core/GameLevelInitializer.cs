@@ -9,6 +9,7 @@ using Player;
 using InputReader.Interfaces;
 using Core.Services.Updater;
 using Assets.Scripts.Core.Services;
+using UnityEngine.SceneManagement;
 
 namespace Core
 {
@@ -21,7 +22,8 @@ namespace Core
         private ExternalDevicesInputReader _externalDeviceInput;
         private PlayerSystem _playerSystem;
         private ProjectUpdater _projectUpdater;
-        private bool _onPause;
+        public static bool onPause = false;
+        public static bool onRestart = false;
         private List<IDisposable> _disposables;
 
         private void Awake()
@@ -46,8 +48,17 @@ namespace Core
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) || onPause == true)
+            {
                 _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
+                onPause = false;
+            }
+            if (onRestart == true)
+            {
+                _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
+                SceneManager.LoadScene(0);
+                onRestart = false;
+            }
         }
 
         private void OnDestroy()
