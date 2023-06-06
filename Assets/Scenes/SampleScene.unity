@@ -30318,10 +30318,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 6616027069255580394, guid: 57a7e15bf99bf0a428ab30690bd31c30, type: 3}
-      propertyPath: AttackTime
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 6616027069255580397, guid: 57a7e15bf99bf0a428ab30690bd31c30, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -30365,10 +30361,6 @@ PrefabInstance:
     - target: {fileID: 6616027069255580397, guid: 57a7e15bf99bf0a428ab30690bd31c30, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6616027069255580398, guid: 57a7e15bf99bf0a428ab30690bd31c30, type: 3}
-      propertyPath: playerMaxHealth
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 57a7e15bf99bf0a428ab30690bd31c30, type: 3}
@@ -33962,7 +33954,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf135ddd4ede42347b3154b3599b1def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 100
+  MaxHealth: 50
   CurrentHealth: 0
   deadTag: Dead
 --- !u!1 &1005213411

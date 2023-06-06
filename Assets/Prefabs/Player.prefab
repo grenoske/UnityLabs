@@ -407,9 +407,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _directionalMovementData:
-    MoveSpeed: 10
-    DiagonalMoveModifier: 1
-  AttackTime: 0.5
+    MoveSpeed: 7
+    DiagonalMoveModifier: 0.7
+  AttackTime: 0.25
 --- !u!95 &6616027069255580393
 Animator:
   serializedVersion: 5
@@ -469,5 +469,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3117afec71317f48baaf44d3423fb6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 30
+  playerMaxHealth: 100
   playerCurrentHealth: 0

@@ -53,7 +53,6 @@ namespace Player
                     _playerEntity.StayFace();
                     _playerEntity.StartAttack();
                     _isAttacking = true;
-                    Debug.Log("Setting is attack true");
                     _attackTimeCounter = _playerEntity.AttackTime;
                 }
 
@@ -64,7 +63,6 @@ namespace Player
             else if (_attackTimeCounter >= 0)
             {
                 _attackTimeCounter -= Time.deltaTime;
-                Debug.Log("time till end :" + _attackTimeCounter);
             }
             else if(_attackTimeCounter < 0)
             {
