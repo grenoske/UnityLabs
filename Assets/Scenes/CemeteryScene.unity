@@ -63525,11 +63525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36375335fc31cb4cb8049a9ea4849b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movingAnimation: 0
   movementSpeed: 5
   rotationSpeed: 5
   attackDelay: 2
   detectionRange: 15
-  MinDistanceToPlayer: 2
+  attackRange: 2
+  deadSprite: {fileID: 1587683198, guid: 938993c42fa323e44b60d281c694ea02, type: 3}
 --- !u!95 &1691238419
 Animator:
   serializedVersion: 5
@@ -63598,8 +63600,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf135ddd4ede42347b3154b3599b1def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 30
+  MaxHealth: 100
   CurrentHealth: 0
+  deadTag: Dead
 --- !u!1 &1794190459
 GameObject:
   m_ObjectHideFlags: 0

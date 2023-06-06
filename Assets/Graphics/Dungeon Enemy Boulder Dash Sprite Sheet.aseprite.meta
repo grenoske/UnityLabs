@@ -466,6 +466,200 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_6
+    originalName: 
+    pivot: {x: 0.4128551, y: 0.5134788}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 15
+      y: 199
+      width: 72
+      height: 49
+    spriteID: f9061f58bb4884348844f96bce78a09c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: 35, y: -19.5}
+      - {x: 24, y: 4.5}
+      - {x: 11, y: 12.5}
+      - {x: -1, y: 23.5}
+      - {x: -10, y: 11.5}
+      - {x: -26, y: 6.5}
+      - {x: -34, y: -15.5}
+      - {x: -26, y: -15.5}
+      - {x: -19, y: -0.5}
+      - {x: -13, y: -20.5}
+      - {x: 5, y: -20.5}
+      - {x: 16, y: -2.5}
+      - {x: 24, y: -19.5}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_8
+    originalName: 
+    pivot: {x: 0.40287265, y: 0.51942563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 114
+      y: 198
+      width: 34
+      height: 51
+    spriteID: 51971091a58b6db46b1058a621a5ae08
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -4, y: 25.5}
+      - {x: -12, y: 16.5}
+      - {x: -15, y: -6.5}
+      - {x: -13, y: -16.5}
+      - {x: -8, y: -24.5}
+      - {x: 5, y: -24.5}
+      - {x: 10, y: -17.5}
+      - {x: 16, y: -3.5}
+      - {x: 16, y: 4.5}
+      - {x: 5, y: 19.5}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_9
+    originalName: 
+    pivot: {x: 0.43047774, y: 0.5}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 171
+      y: 201
+      width: 38
+      height: 46
+    spriteID: b444947374fe5c844bf0adf304b568dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline:
+    - outline:
+      - {x: -7, y: 22}
+      - {x: -14, y: 9}
+      - {x: -17, y: -17}
+      - {x: -10, y: -19}
+      - {x: 7, y: -21}
+      - {x: 18, y: -4}
+      - {x: 17, y: 5}
+      - {x: 1, y: 21}
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_10
+    originalName: 
+    pivot: {x: 0.60339063, y: 0.6052372}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 6
+      width: 57
+      height: 56
+    spriteID: a7f80e450aff6c048b34db7f4ca2285a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_11
+    originalName: 
+    pivot: {x: 0.56723475, y: 0.6315463}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 69
+      y: 5
+      width: 72
+      height: 56
+    spriteID: 8030db292ec3c4344989c794fd6446e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_12
+    originalName: 
+    pivot: {x: 0.4669163, y: 0.67580336}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 5
+      width: 75
+      height: 57
+    spriteID: 7d94a922ab654a646b70ac3ef5c387d9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_13
+    originalName: 
+    pivot: {x: 0.50522786, y: 0.6424064}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 240
+      y: 5
+      width: 75
+      height: 56
+    spriteID: 8d8964a7dec124844b54da3988ae1a2c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  - name: Dungeon Enemy Boulder Dash Sprite Sheet_14
+    originalName: 
+    pivot: {x: 0.66551995, y: 0.6617012}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 319
+      y: 4
+      width: 66
+      height: 56
+    spriteID: 5f880b06a229cf44b9716202092f7b0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
   asepriteLayers:
   - layerIndex: 0
     guid: 85310333

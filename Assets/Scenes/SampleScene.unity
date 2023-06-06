@@ -33872,12 +33872,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36375335fc31cb4cb8049a9ea4849b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movingAnimation: 0
+  movingAnimation: 1
   movementSpeed: 5
   rotationSpeed: 5
   attackDelay: 2
   detectionRange: 10
-  MinDistanceToPlayer: 2
+  attackRange: 3
+  deadSprite: {fileID: -387941088660758834, guid: 81658989cc15d684b8c10f43a130c34d, type: 3}
 --- !u!114 &912347202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33963,6 +33964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   CurrentHealth: 0
+  deadTag: Dead
 --- !u!1 &1005213411
 GameObject:
   m_ObjectHideFlags: 0
