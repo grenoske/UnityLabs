@@ -14,6 +14,7 @@ namespace Core.Services.Updater
 
         public static string LocationStartPoint; //need to refact
         public static string DeadBosses; //need to refact
+        public static int PlayerHP = 100;
 
         private bool _isPaused;
 

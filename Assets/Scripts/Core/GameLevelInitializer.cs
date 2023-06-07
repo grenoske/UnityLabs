@@ -46,7 +46,7 @@ namespace Core
                     Destroy(GameObject.FindGameObjectWithTag("Enemy"));
                 }
             }
-            _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
+                _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
             {
                 _gameUIInputView,
                 _externalDeviceInput
@@ -68,6 +68,7 @@ namespace Core
                 _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
                 ProjectUpdater.DeadBosses = null;
                 ProjectUpdater.LocationStartPoint = null;
+                ProjectUpdater.PlayerHP = 100;
                 SceneManager.LoadScene(0);
                 onRestart = false;
             }

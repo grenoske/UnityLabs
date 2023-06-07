@@ -142,7 +142,6 @@ public class UndeadController : MonoBehaviour, IDisposable
     private void DelayAttack()
     {
         float attackDuration = _animator.GetCurrentAnimatorStateInfo(0).length;
-        Debug.Log("2: "+attackDuration);
         _animator.SetBool("isAttacking", false);
         Invoke(nameof(ResetAttack), attackDelay);
     }

@@ -11,11 +11,13 @@ namespace Core.Services
     {
         public string newAreaName;
         public string oldAreaName;
+        private int hp;
 
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.gameObject.name == "Player")
             {
+                hp = other.gameObject.GetComponent<PlayerHealthManager>().playerCurrentHealth;
                 // Викликати подію для переходу до нової локації
                 LoadNewArea(newAreaName);
             }
@@ -31,6 +33,7 @@ namespace Core.Services
                 if (ProjectUpdater.DeadBosses == null || !ProjectUpdater.DeadBosses.Contains(BossIndex.ToString()))
                     ProjectUpdater.DeadBosses += BossIndex;
             }
+            ProjectUpdater.PlayerHP = hp;
             SceneManager.LoadScene(areaName);
         }
     }

@@ -9,11 +9,12 @@ public class PlayerHealthManager : MonoBehaviour, IDisposable
 {
     public int playerMaxHealth;
     public int playerCurrentHealth;
+    public GameObject healEffect;
     // Start is called before the first frame update
     void Start()
     {
         ProjectUpdater.Instance.UpdateCalled += OnUpdate;
-        playerCurrentHealth = playerMaxHealth;
+        playerCurrentHealth = ProjectUpdater.PlayerHP;
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class PlayerHealthManager : MonoBehaviour, IDisposable
         {
             gameObject.SetActive(false);
             Scene scene = SceneManager.GetActiveScene();
+            ProjectUpdater.PlayerHP = 100;
             SceneManager.LoadScene(scene.name);
         }    
         
@@ -31,6 +33,19 @@ public class PlayerHealthManager : MonoBehaviour, IDisposable
     public void HurtPlayer(int damageToGive)
     {
         playerCurrentHealth -= damageToGive;
+    }
+
+    public void RestorePlayerHealth(int healthToRestore)
+    {
+        GameObject effectInstance = Instantiate(healEffect, gameObject.transform.position, gameObject.transform.rotation);
+        playerCurrentHealth += healthToRestore;
+
+        if (playerCurrentHealth > playerMaxHealth)
+        {
+            playerCurrentHealth = playerMaxHealth;
+        }
+
+        Destroy(effectInstance, 1.5f);
     }
 
     public void SetMaxHealth()
