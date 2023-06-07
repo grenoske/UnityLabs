@@ -12,6 +12,8 @@ namespace Player
         private Animator _animator;
         private Rigidbody2D _rigidbody;
         private DirectionalMover _directionalMover;
+        public float AttackTime;
+        private bool _Attacking;
 
         public void MoveHorizontally(float horizontalDirection) => _directionalMover.MoveHorizontally(horizontalDirection);
         public void MoveVertically(float verticalDirection) => _directionalMover.MoveVertically(verticalDirection);
@@ -28,7 +30,7 @@ namespace Player
 
         private void Update()
         {
-           if(_directionalMover.IsChangeAnim)
+            if (_directionalMover.IsChangeAnim)
             {
                 UpdateAnim();
                 _directionalMover.IsChangeAnim = false;
@@ -40,6 +42,17 @@ namespace Player
             _animator.SetFloat("LastMoveX", _directionalMovementData.LastMove.x);
             _animator.SetFloat("LastMoveY", _directionalMovementData.LastMove.y);
             _animator.SetBool("isPlayerMoving", _directionalMovementData.IsMoving);
+            _animator.SetBool("isPlayerAttacking", _Attacking);
+        }
+
+        public void StartAttack()
+        {
+            _Attacking = true;
+        }
+
+        public void StopAttack()
+        {
+            _Attacking = false;
         }
     }
 }

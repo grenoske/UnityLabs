@@ -1,0 +1,743 @@
+fileFormatVersion: 2
+guid: 97a42b657630d714b8accdae068dc6b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: attacking_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2, y: 20}
+        - {x: 15, y: 28}
+        - {x: -3, y: 28}
+        - {x: -11, y: 19}
+        - {x: -8, y: 13}
+        - {x: -15, y: 7}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: 0, y: -9}
+        - {x: 6, y: -2}
+        - {x: 30, y: -1}
+        - {x: 2, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c038cec3c9b2f2d4397ccc15acad45ce
+      internalID: -1132628419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_1
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 4, y: 21}
+        - {x: 11, y: 36}
+        - {x: 2, y: 22}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -19, y: 21}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: 0, y: -9}
+        - {x: 11, y: 14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fcbe743cfccae340abe2c6fb4c1992a
+      internalID: -696640657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_2
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 42, y: 18}
+        - {x: 16, y: 36}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: 0, y: -9}
+        - {x: 13, y: -24}
+        - {x: 26, y: -23}
+        - {x: 42, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: af708c9d4601cc04ea8eba10e6f83f20
+      internalID: 1847086558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_3
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 37, y: 17}
+        - {x: 5, y: 11}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: 0, y: -9}
+        - {x: 13, y: -24}
+        - {x: 26, y: -23}
+        - {x: 42, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70444679b3d635148abf28d4209d0f57
+      internalID: 1431179818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_4
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: -4}
+        - {x: 5, y: 11}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: 0, y: -9}
+        - {x: 5, y: 0}
+        - {x: 13, y: -24}
+        - {x: 26, y: -23}
+        - {x: 37, y: -14}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1d39d0b9511d049bd73483f7f3d890
+      internalID: 11548103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_5
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 200
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 28}
+        - {x: 11, y: 35}
+        - {x: 5, y: 11}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -8, y: -30}
+        - {x: 0, y: -9}
+        - {x: 5, y: 0}
+        - {x: 15, y: -12}
+        - {x: 15, y: 23}
+        - {x: 32, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 147f81bf8e0aec74f821b860c44b1ab0
+      internalID: 1391489882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 16, y: 31}
+        - {x: -3, y: 31}
+        - {x: 5, y: 11}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -8, y: -30}
+        - {x: 0, y: -9}
+        - {x: 5, y: 0}
+        - {x: 22, y: -7}
+        - {x: 4, y: 23}
+        - {x: 24, y: 25}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695732a38bace1f40a6c5052cc37326a
+      internalID: 1052176442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_7
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5, y: 33}
+        - {x: -11, y: 26}
+        - {x: 8, y: 22}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -8, y: -30}
+        - {x: 0, y: -9}
+        - {x: 5, y: 0}
+        - {x: 7, y: 10}
+        - {x: 10, y: 20}
+        - {x: 15, y: 29}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851fc0669589cf64db581066e23257d4
+      internalID: 618239870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_8
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: 31}
+        - {x: -21, y: 22}
+        - {x: -22, y: 6}
+        - {x: -11, y: 22}
+        - {x: -8, y: 20}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -8, y: -30}
+        - {x: 0, y: -9}
+        - {x: 8, y: -10}
+        - {x: 5, y: 9}
+        - {x: 0, y: 21}
+        - {x: -7, y: 23}
+        - {x: -9, y: 27}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369d90b4a2ff85a45b5ab445b8063ef3
+      internalID: -306617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_9
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 36, y: 21}
+        - {x: 5, y: 23}
+        - {x: -8, y: 20}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -23, y: -17}
+        - {x: -8, y: -23}
+        - {x: -2, y: -23}
+        - {x: 12, y: -22}
+        - {x: 30, y: -18}
+        - {x: 43, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c145f41a179e640b9284f5179d80b9
+      internalID: -765576954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_10
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 42, y: 8}
+        - {x: 36, y: 21}
+        - {x: 5, y: 23}
+        - {x: -8, y: 20}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: -8, y: -23}
+        - {x: -3, y: -17}
+        - {x: 12, y: -20}
+        - {x: 30, y: -18}
+        - {x: 43, y: -5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b93cc90e47fa54488df32b019b2c71a
+      internalID: -1121399865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 100
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 42, y: 8}
+        - {x: 36, y: 21}
+        - {x: 7, y: 22}
+        - {x: -8, y: 20}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -9, y: -33}
+        - {x: -8, y: -23}
+        - {x: -3, y: -17}
+        - {x: 4, y: -2}
+        - {x: 5, y: 6}
+        - {x: 43, y: 4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d289712fe719bd459024d05127ec136
+      internalID: -230014424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 23, y: 28}
+        - {x: 11, y: 35}
+        - {x: 5, y: 11}
+        - {x: 0, y: 20}
+        - {x: -6, y: 21}
+        - {x: -8, y: 13}
+        - {x: -15, y: 6}
+        - {x: -15, y: -6}
+        - {x: -8, y: -30}
+        - {x: 0, y: -9}
+        - {x: 5, y: 0}
+        - {x: 15, y: -12}
+        - {x: 15, y: 23}
+        - {x: 32, y: 16}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5fa55766f5e01a43ab5e7f622b9115c
+      internalID: -1985497992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 17, y: 35}
+        - {x: 1, y: 41}
+        - {x: -17, y: 41}
+        - {x: -35, y: 28}
+        - {x: -37, y: 15}
+        - {x: -19, y: 32}
+        - {x: 14, y: 27}
+        - {x: 16, y: 0}
+        - {x: -10, y: -23}
+        - {x: 4, y: -21}
+        - {x: 21, y: -11}
+        - {x: 28, y: 1}
+        - {x: 28, y: 13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237a84550eee7b24d95f35e7f98c4e17
+      internalID: -656142612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_14
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 34
+        width: 54
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10, y: -15.5}
+        - {x: -19, y: -20.5}
+        - {x: -1, y: -18.5}
+        - {x: 13, y: -8.5}
+        - {x: 15, y: 2.5}
+        - {x: 9, y: 18.5}
+        - {x: 4, y: -5.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298f0a201ff6c39429f945b4d1208c11
+      internalID: -1536310796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_15
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 32, y: 3}
+        - {x: 22, y: -7}
+        - {x: 6, y: -11}
+        - {x: -14, y: -11}
+        - {x: -33, y: -3}
+        - {x: -32, y: -9}
+        - {x: -10, y: -20}
+        - {x: 17, y: -19}
+        - {x: 39, y: -7}
+        - {x: 41, y: 2}
+        - {x: 39, y: 15}
+        - {x: 32, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17eb6c8a9a0f9a4dbaea66e36b70824
+      internalID: -108607618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_16
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: 31}
+        - {x: -13, y: 3}
+        - {x: -29, y: -13}
+        - {x: -14, y: -8}
+        - {x: -6, y: -2}
+        - {x: -3, y: 12}
+        - {x: -7, y: 26}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e9d110480df86844ac51927e3b1fc2f
+      internalID: -742163261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attacking_17
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 34
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 6.5, y: 0}
+        - {x: -0.5, y: -7}
+        - {x: -13.5, y: -15}
+        - {x: 9.5, y: -12}
+        - {x: 14.5, y: -6}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548ffece5b800b441a20f45a065569fc
+      internalID: 1126954785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      attacking_0: -1132628419
+      attacking_1: -696640657
+      attacking_10: -1121399865
+      attacking_11: -230014424
+      attacking_12: -1985497992
+      attacking_13: -656142612
+      attacking_14: -1536310796
+      attacking_15: -108607618
+      attacking_16: -742163261
+      attacking_17: 1126954785
+      attacking_2: 1847086558
+      attacking_3: 1431179818
+      attacking_4: 11548103
+      attacking_5: 1391489882
+      attacking_6: 1052176442
+      attacking_7: 618239870
+      attacking_8: -306617
+      attacking_9: -765576954
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

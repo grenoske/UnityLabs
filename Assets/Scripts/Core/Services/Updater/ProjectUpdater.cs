@@ -12,6 +12,10 @@ namespace Core.Services.Updater
         public event Action FixedUpdateCalled;
         public event Action LateUpdateCalled;
 
+        public static string LocationStartPoint; //need to refact
+        public static string DeadBosses; //need to refact
+        public static int PlayerHP = 100;
+
         private bool _isPaused;
 
         public bool IsPaused
@@ -30,9 +34,14 @@ namespace Core.Services.Updater
         private void Awake()
         {
             if (Instance == null)
+            {
                 Instance = this;
+                DontDestroyOnLoad(gameObject);
+            }
             else
+            {
                 Destroy(gameObject);
+            }
         }
         private void Update()
         {

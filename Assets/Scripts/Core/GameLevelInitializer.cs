@@ -8,6 +8,8 @@ using InputReader;
 using Player;
 using InputReader.Interfaces;
 using Core.Services.Updater;
+using Assets.Scripts.Core.Services;
+using UnityEngine.SceneManagement;
 
 namespace Core
 {
@@ -15,11 +17,13 @@ namespace Core
     {
         [SerializeField] private PlayerEntity _playerEntity;
         [SerializeField] private GameUIInputView _gameUIInputView;
+        [SerializeField] private LocationStartPoint _locationPoint;
 
         private ExternalDevicesInputReader _externalDeviceInput;
         private PlayerSystem _playerSystem;
         private ProjectUpdater _projectUpdater;
-        private bool _onPause;
+        public static bool onPause = false;
+        public static bool onRestart = false;
         private List<IDisposable> _disposables;
 
         private void Awake()
@@ -30,19 +34,44 @@ namespace Core
             else
                 _projectUpdater = ProjectUpdater.Instance as ProjectUpdater;
             _externalDeviceInput = new ExternalDevicesInputReader();
-            _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
+            if (_locationPoint != null && ProjectUpdater.LocationStartPoint != null)
+            {
+                _locationPoint.SetPlayerPos(ProjectUpdater.LocationStartPoint);
+            }
+            if (ProjectUpdater.DeadBosses != null)
+            {
+                int BossIndex = SceneManager.GetActiveScene().buildIndex;
+                if (ProjectUpdater.DeadBosses.Contains(BossIndex.ToString()))
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+                }
+            }
+                _playerSystem = new PlayerSystem(_playerEntity, new List<IEntityInputSource>
             {
                 _gameUIInputView,
                 _externalDeviceInput
             });
+            _disposables.Add(_playerSystem);
             _disposables.Add(_externalDeviceInput);
 
         }
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) || onPause == true)
+            {
                 _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
+                onPause = false;
+            }
+            if (onRestart == true)
+            {
+                _projectUpdater.IsPaused = !_projectUpdater.IsPaused;
+                ProjectUpdater.DeadBosses = null;
+                ProjectUpdater.LocationStartPoint = null;
+                ProjectUpdater.PlayerHP = 100;
+                SceneManager.LoadScene(0);
+                onRestart = false;
+            }
         }
 
         private void OnDestroy()

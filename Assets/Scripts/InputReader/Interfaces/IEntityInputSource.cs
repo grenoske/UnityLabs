@@ -10,5 +10,7 @@ namespace InputReader.Interfaces
     {
         float HorizontalDirection { get; }
         float VerticalDirection { get; }
+        bool Attack { get; }    
+        void ResetOneTimeAction();
     }
 }
